@@ -1,0 +1,123 @@
+body{
+  background-image: url('images/color-bg.jpg');
+  font-family: tahoma;
+}
+
+@font-face {
+  font-family: Wunderland-bold;
+  src: url('fonts/Im-Wunderland-Bold.otf');
+}
+
+#wrapper{
+  width: 100%;
+}
+#inputContainer{
+    position:relative;
+    padding:0;
+    margin:10px;
+}
+#searchMusic{
+    height:30px;
+    margin:0;
+    padding-left: 40px;
+    width: 390px;
+    border-radius: 30px;
+}
+#searchMusic:focus{
+  outline: none;
+}
+#inputImg{
+    position:absolute;
+    bottom:11px;
+    left:15px;
+    width:15px;
+    height:15px;
+}
+#outputContainer{
+  visibility: hidden;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px 0 10px 14px;
+  width: 410px;
+  height: 90vh;
+  overflow: scroll;
+  padding: 10px;
+  background: rgba(226, 226, 226, 0.25);
+}
+
+.songOption{
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.songOption:hover{
+  background-color: #ededed;
+}
+.songIcon{
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.songTitle{
+  position: absolute;
+  margin-left: 10px;
+  float: left;
+  display: inline;
+  font-size: 14px;
+}
+#left{
+  float: left;
+  height: 99vh;
+  overflow: hidden;
+}
+
+#right{
+  height: 99vh;
+  visibility: hidden;
+  border-radius: 5px;
+  display: block;
+  margin: 0px 50px 0 500px;
+  background: rgba(226, 226, 226, 0.25);
+  overflow: hidden;
+}
+
+#albumArt{
+  margin: 60px auto;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+#controls{
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+#controls button{
+  margin: 0 10px;
+}
+
+#trackInfo{
+  width: inherit;
+  text-align: center;
+}
+
+#trackTitle{
+  margin: 50px auto 20px auto;
+  font-family: Wunderland-bold;
+  font-size: 40px;
+}
+
+#trackDate{
+  font-family: Wunderland-bold;
+  font-size: 25px;
+}
+
+#trackGenre{
+  font-family: Wunderland-bold;
+  font-size: 25px;
+  margin-top: -10px;
+}

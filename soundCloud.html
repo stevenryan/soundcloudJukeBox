@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Soundcloud</title>
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="soundCloud.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="icon" href="images/cloudmusic-icon.png">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="left">
+      <div id="inputContainer">
+        <input type="text" id="searchMusic" placeholder="search music">
+        <img src="images/magnifying-glass.png" id="inputImg">
+      </div>
+
+      <div id="outputContainer"></div>
+    </div>
+    <div id="right">
+      <div id="albumArt">
+      </div>
+
+      <div id="controls">
+        <button id="previousBttn"><i class="fas fa-step-backward"></i></button>
+        <button id="playBttn"><i class="fas fa-play"></i></button>
+        <button id="pauseBttn"><i class="fas fa-pause"></i></button>
+        <button id="nextBttn"><i class="fas fa-step-forward"></i></button>
+      </div>
+
+      <div id="trackInfo">
+        <h2 id="trackTitle"></h2>
+        <h3 id="trackDate"></h3>
+        <h3 id="trackGenre"></h3>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="env.js"></script>
+  <script type="text/javascript" src="soundCloud.js"></script>
+</body>
+</html>
