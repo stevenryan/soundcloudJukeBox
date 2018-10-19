@@ -1,4 +1,7 @@
+// Soundcloud Key!!!!
 SC.initialize({client_id: ENV})
+
+/*---------------------------- HTML variables ----------------------------*/
 var searchMusic = document.getElementById("searchMusic")
 var outputContainer = document.getElementById("outputContainer")
 var searchOptions = outputContainer.children
